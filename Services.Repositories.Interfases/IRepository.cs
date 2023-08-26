@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Repositories
+﻿namespace Services.Repositories.Interfases
 {
     public interface IRepository<T> : IDisposable where T : class
     {

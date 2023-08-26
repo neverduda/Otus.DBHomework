@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure.EntityFramework\Infrastructure.EntityFramework.csproj" />
-    <ProjectReference Include="..\Infrastructure.Repositories\Infrastructure.Repositories.csproj" />
+    <ProjectReference Include="..\Infrastructure.Repositories\Infrastructure.Repositories.Implementations.csproj" />
     <ProjectReference Include="..\Services\Services.csproj" />
   </ItemGroup>
 

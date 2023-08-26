@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Services.Implementations;
 using Services.Interfaces;
+using Services.Repositories.Interfases;
 
 internal class Program
 {
@@ -41,7 +42,6 @@ internal class Program
 
                 var databaseConfig = hostContext.Configuration.GetSection("DBConfig").Get<ApplicationSettings>();
                 
-                // services.AddDbContext<DBContext>(o => o.UseNpgsql(databaseConfig.ConnectionString));
                 services.AddDbContext<DBContext>(o => { o.UseNpgsql(databaseConfig.ConnectionString); }, ServiceLifetime.Transient, ServiceLifetime.Transient);
 
                 services.AddTransient<IUserRepository, SQLRepository>();
