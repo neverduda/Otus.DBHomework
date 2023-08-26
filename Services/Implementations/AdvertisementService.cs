@@ -1,6 +1,6 @@
 ﻿using Domain.Entities;
-using Infrastructure.Repositories;
 using Services.Interfaces;
+using Services.Repositories.Interfases;
 
 namespace Services.Implementations
 {
